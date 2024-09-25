@@ -1,0 +1,81 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los elementos del formulario */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Etiquetas del formulario */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón de envío */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Mensaje de error */
+#login-message {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+
+/* Enlace para registrarse */
+p {
+    text-align: center;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

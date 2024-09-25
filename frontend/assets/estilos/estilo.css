@@ -1,0 +1,251 @@
+/* Reiniciar algunos estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    color: #1DB954;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1;
+    padding: 10px;
+}
+
+header {
+    margin-bottom: 10px;
+    margin-right: 290px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.search-bar i {
+    color: #fff;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.playlist {
+    display: flex;
+    gap: 20px;
+}
+
+.song {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.song img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.song button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #181818;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music-player .current-song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.music-player .current-song img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.music-player .controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.music-player .controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.music-player .controls button i {
+    font-size: 20px;
+}
+
+.music-player .progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 10px;
+}
+
+#progress-bar {
+    flex: 1;
+    cursor: pointer;
+}
+
+#current-time, #total-duration {
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Mantener la estructura básica y añadir nuevas reglas */
+
+/* Estilo general para las filas de canciones */
+.playlist-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.song {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.song img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.song button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Para pantallas más pequeñas, hacer que las filas de canciones se comporten de manera responsive */
+@media (max-width: 768px) {
+    .playlist-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .song {
+        margin-bottom: 20px;
+    }
+}
+
+.auth-options {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.auth-btn {
+    color: #1DB954;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #1DB954;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #1DB954;
+    color: #fff;
+}

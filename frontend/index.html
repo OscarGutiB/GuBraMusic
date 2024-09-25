@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="description" content="Plataforma musical online">
+    <meta name="keywords" content="musica, cancion, stream">
+    <meta name="author" content="Oscar Gutierrez Brayda">
+    
+    <title>GuBraMusic</title>
+    
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="/frontend/assets/estilos/estilo.css">
+    
+    <!-- Icono de la página (favicon) -->
+    <link rel="icon" href="/frontend/assets/img/logo pagina/musica blanco.png" type="image/x-icon">
+
+    <!-- Enlaces a fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlaces a librerías externas (si es necesario) -->
+    <!-- Ejemplo: Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Scripts opcionales que se cargan antes del cuerpo -->
+    <script src="/frontend/assets/scripts/script.js" defer></script>
+</head>
+<body>
+        <!-- Contenedor de la plataforma -->
+        <div class="container">
+            <!-- Sidebar (Barra lateral de navegación) -->
+            <nav class="sidebar">
+                <div class="logo">
+                    <h2>GuBraMusic</h2>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i> Buscar</a></li>
+                    <li><a href="#"><i class="fas fa-music"></i> Tu Biblioteca</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Contenido principal -->
+            <div class="main-content">
+                <!-- Encabezado con búsqueda -->
+                <header>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar canciones, artistas...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="auth-options">
+                        <a href="inicio.html" class="auth-btn">Iniciar Sesión</a>
+                        <a href="registro.html" class="auth-btn">Registrarse</a>
+                    </div>
+            
+                </header>
+                
+    
+                <!-- Sección principal -->
+                <section class="content">
+                    <h1>Escucha tu música favorita</h1>
+                    
+                    <!-- Primera fila de canciones -->
+                    <div class="playlist-row">
+                        <div class="song" data-src="/frontend/assets/canciones/CSFAMM.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/leiva_csfamm.jpg" alt="Album Cover">
+                            <p>Como si fueras a morir mañana</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/MHIAB.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/mhiab.jpg" alt="Album Cover">
+                            <p>Me has invitado a bailar</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/MES.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/MES.jpg" alt="Album Cover">
+                            <p>Movezz en silencio</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/LMDV.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/LMDV.jpg" alt="Album Cover">
+                            <p>La mujer de verde</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/LULUNA.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/LULUNA.jpg" alt="Album Cover">
+                            <p>Luluna - Lucho RK</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/MA.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/MA.jpg" alt="Album Cover">
+                            <p>Mal agüero - Delaossa</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                
+                    <!-- Segunda fila de canciones -->
+                    <div class="playlist-row">
+                        <div class="song" data-src="/frontend/assets/canciones/COLUMBIA.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/COLUMBIA.jpg" alt="Album Cover">
+                            <p>Columbia - Quevedo</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/LUNA.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/LUNA.jpg" alt="Album Cover">
+                            <p>Luna - Feid</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/y150.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/y150.jpg" alt="Album Cover">
+                            <p>Yandel 150 - Yande, Feid</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/LR.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/lr.jpg" alt="Album Cover">
+                            <p>Lo Real - Hard GZ, Nikone</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/cicatrices.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/cicatrices.jpg" alt="Album Cover">
+                            <p>Cicatrices - Natos y Waor</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="song" data-src="/frontend/assets/canciones/VENENO.mp3">
+                            <img src="/frontend/assets/img/portadas canciones/veneno.jpg" alt="Album Cover">
+                            <p>Veneno - Delaossa</p>
+                            <button><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </section>
+    
+        <!-- Reproductor de música en la parte inferior -->
+        <footer class="music-player">
+            <div class="current-song">
+                <img src="https://via.placeholder.com/50" alt="Album Cover" id="current-cover">
+                <p id="current-song-name">Nombre de la Canción en Reproducción</p>
+            </div>
+            <div class="controls">
+                <button id="prev"><i class="fas fa-backward"></i></button>
+                <button id="play-pause"><i class="fas fa-play"></i></button>
+                <button id="next"><i class="fas fa-forward"></i></button>
+            </div>
+        
+            <!-- Nueva barra de progreso -->
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0" max="100">
+                <span id="total-duration">0:00</span>
+            </div>
+        
+            <!-- Elemento de audio oculto -->
+            <audio id="audio-player" src=""></audio>
+        </footer>
+
+</body>
+</html>
